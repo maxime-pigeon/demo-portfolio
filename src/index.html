@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="assets/styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <h1>{{ profile.name | escape }}</h1>
+            {% if profile.email != blank %}
+            <a href="mailto:{{ profile.email | escape }}"
+                >{{ profile.email | escape }}</a
+            >
+            {% endif %}
+        </header>
+        <main>
+            {% assign newestFirst = projects | sort: 'date' | reverse %} {% for
+            project in newestFirst %}
+            <article>
+                <div class="project-info">
+                    <h2>{{ project.nom | escape }}</h2>
+                    <dl>
+                        <dt>URL</dt>
+                        <dd><a href="{{ project.url | escape }}">{{ project.url | escape }}</a></dd>
+                        <dt>Date de complétion</dt>
+                        <dd><time datetime="{{ project.date }}">{{ project.date }}</time></dd>
+                        <dt>Description</dt>
+                        <dd>{{ project.description | escape }}</dd>
+                        {% if project.tags.size > 0 %}
+                        <dt>Responsabilités et technologies</dt>
+                        <dd>
+                            <ul>
+                                {% for tag in project.tags %}
+                                <li>{{ tag | escape }}</li>
+                                {% endfor %}
+                            </ul>
+                        </dd>
+                        {% endif %}
+                    </dl>
+                </div>
+                <div class="project-gallery">
+                    {% for image in project.images %}
+                    <img
+                        src="{{ image.src | escape }}"
+                        alt="{{ image.alt | escape }}"
+                        loading="lazy"
+                    />
+                    {% endfor %}
+                </div>
+            </article>
+            {% endfor %}
+        </main>
+    </body>
+</html>

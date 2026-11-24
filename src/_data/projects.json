@@ -1,0 +1,69 @@
+[
+  {
+    "nom": "Atelier Nord",
+    "date": "2024-10-15",
+    "description": "Un portfolio pour un atelier d'architecture. Les plans et les photographies se répondent pour raconter chaque bâtiment, du premier croquis au chantier livré.",
+    "tags": ["Conception UI", "Intégration client", "HTML", "CSS"],
+    "url": "https://www.pthibault.com/",
+    "images": [
+      {
+        "src": "assets/atelier-nord/architecture.jpg",
+        "alt": "Volume de métal blanc en porte-à-faux au-dessus d'une façade vitrée."
+      },
+      {
+        "src": "assets/atelier-nord/tours.jpg",
+        "alt": "Tours de verre vues en contre-plongée, quelques fenêtres encore éclairées."
+      }
+    ]
+  },
+  {
+    "nom": "Hors-piste",
+    "date": "2025-06-12",
+    "description": "Un carnet de randonnée pour choisir un sentier selon la saison, le dénivelé et le temps qu'il reste avant la tombée de la nuit.",
+    "tags": ["Conception UI", "CSS", "JavaScript"],
+    "url": "https://www.visorando.com/",
+    "images": [
+      {
+        "src": "assets/hors-piste/montagne.jpg",
+        "alt": "Vallée bordée de conifères et de sommets enneigés sous un ciel bleu."
+      },
+      {
+        "src": "assets/hors-piste/foret.jpg",
+        "alt": "Rayons de lumière entre les troncs d'un sous-bois brumeux."
+      },
+      {
+        "src": "assets/hors-piste/vallee.jpg",
+        "alt": "Pins au pied d'une haute paroi rocheuse éclairée par le soleil."
+      },
+      {
+        "src": "assets/hors-piste/lac.jpg",
+        "alt": "Chalet sur pilotis au bord d'un lac où se reflètent des falaises dans la brume."
+      },
+      {
+        "src": "assets/hors-piste/cretes.jpg",
+        "alt": "Voie lactée au-dessus d'une crête enneigée."
+      }
+    ]
+  },
+  {
+    "nom": "Après minuit",
+    "date": "2025-03-08",
+    "description": "Le programme de poche d'un festival de musique. On y compare les horaires des scènes pour préparer sa soirée sans manquer le dernier concert.",
+    "tags": ["Intégration client", "HTML", "CSS", "JavaScript"],
+    "url": "https://montreal.mutek.org/fr",
+    "images": [
+      {
+        "src": "assets/apres-minuit/concert.jpg",
+        "alt": "Foule en silhouette devant une scène éclairée par des projecteurs orange."
+      },
+      {
+        "src": "assets/apres-minuit/platines.jpg",
+        "alt": "Main au-dessus d'une platine éclairée en violet."
+      },
+      {
+        "src": "assets/apres-minuit/festival.jpg",
+        "alt": "Pluie de confettis sur les mains levées du public."
+      }
+    ]
+  }
+]
